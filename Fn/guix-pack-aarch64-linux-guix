@@ -1,0 +1,5 @@
+guix-pack-aarch64-linux-guix () 
+{ 
+    local D="tarballig <guix>";
+    guix pack --format=tarball --bootstrap --no-grafts --relocatable -s aarch64-linux ${*:-guix guile ed emacs}
+}
